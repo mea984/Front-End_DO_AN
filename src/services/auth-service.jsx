@@ -3,7 +3,7 @@ import axios from "axios";
 export const apiRegister = async (dataRegister) => {
   try {
     const response = await axios.post(
-      "http://localhost:8080/auth/register",
+      "https://codezen.io.vn/auth/register",
       dataRegister
     );
     return response?.data;
@@ -15,7 +15,7 @@ export const apiRegister = async (dataRegister) => {
 export const apiVerifyOtpRegister = async (dataOtp) => {
   try {
     const response = await axios.post(
-      "http://localhost:8080/auth/verify-otp-register",
+      "https://codezen.io.vn/auth/verify-otp-register",
       dataOtp
     );
     return response?.data;
@@ -27,7 +27,7 @@ export const apiVerifyOtpRegister = async (dataOtp) => {
 export const apiForgotPassword = async (dataForgotPassword) => {
   try {
     const response = await axios.post(
-      "http://localhost:8080/auth/forgot-password",
+      "https://codezen.io.vn/auth/forgot-password",
       dataForgotPassword
     );
     return response?.data;
