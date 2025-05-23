@@ -1,0 +1,168 @@
+.containner__login {
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  gap: 80px;
+  min-height: calc(100vh - 114px);
+  .containner__login__left {
+    .containner__login__left__title {
+      color: #333;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .containner__login__left__form {
+      margin-top: 10px;
+      .containner__login__left__form__item {
+        margin-top: 12px;
+        label {
+          font-size: 16px;
+          font-weight: 600;
+          padding-bottom: 5px;
+        }
+        input {
+          min-width: 300px;
+          font-size: 15pxf;
+        }
+      }
+      .containner__login__left__form__forgot_pasword {
+        margin-top: 10px;
+        text-align: right;
+        color: var(--primary-color);
+        font-size: 15px;
+      }
+      .containner__login__left__form__btnLogin {
+        display: flex;
+        button {
+          padding: 0 20px;
+          font-size: 15px;
+          background-color: var(--primary-color);
+          color: #fff;
+          height: 36px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .containner__login__center {
+    margin-top: 100px;
+    .containner__login__center__title {
+      font-size: 16px;
+      color: #bbb;
+      text-transform: uppercase;
+    }
+  }
+  .containner__login__right {
+    .containner__login__right__title {
+      font-size: 18px;
+      color: #333;
+    }
+    .containner__login__right__service {
+      margin-top: 5px;
+      display: flex;
+      gap: 10px;
+      .containner__login__right__service__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        border-radius: 3px;
+        padding: 0 8px;
+        height: 29px;
+        color: #fff;
+        svg {
+          font-size: 16px;
+        }
+        .containner__login__right__service__item__title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .containner__login {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+
+    .containner__login__left,
+    .containner__login__right {
+      width: 100%;
+    }
+
+    .containner__login__left__form__item input {
+      width: 100%;
+      min-width: unset;
+    }
+
+    .containner__login__left__form__btnLogin {
+      justify-content: center;
+    }
+
+    .containner__login__center {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .containner__login__right__service {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containner__login {
+    padding: 20px;
+
+    .containner__login__left__title {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .containner__login__left__form__item {
+      label {
+        font-size: 14px;
+      }
+      input {
+        font-size: 14px;
+      }
+    }
+
+    .containner__login__left__form__forgot_pasword {
+      font-size: 14px;
+    }
+
+    .containner__login__left__form__btnLogin {
+      button {
+        font-size: 14px;
+        height: 34px;
+      }
+    }
+
+    .containner__login__center__title {
+      font-size: 14px;
+    }
+
+    .containner__login__right__title {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .containner__login__right__service__item {
+      font-size: 14px;
+      height: 32px;
+      padding: 0 10px;
+
+      svg {
+        font-size: 14px;
+      }
+
+      .containner__login__right__service__item__title {
+        font-size: 14px;
+      }
+    }
+  }
+}
