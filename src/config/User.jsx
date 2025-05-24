@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 const apiUser = axios.create({
   baseURL: "https://codezen.io.vn",
-  timeout: 30000, // thời gian chờ tối đa là 30 giây
+  timeout: 50000, // thời gian chờ tối đa là 30 giây
 });
 
 apiUser.interceptors.request.use(
